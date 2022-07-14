@@ -10,7 +10,7 @@ async function run() {
     const { GITHUB_TOKEN } = process.env;
     if (reaction && !GITHUB_TOKEN) {
         core.setFailed('If "reaction" is supplied, GITHUB_TOKEN is required');
-        return;
+        return;  
     }
 
     const body =
